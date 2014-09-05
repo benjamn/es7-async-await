@@ -1,0 +1,44 @@
+{
+  "author": "Ben Newman <bn@cs.stanford.edu>",
+  "name": "es7-async-await",
+  "description": "Transformer that converts async functions and await expressions into ECMAScript 6 generator functions and yield expressions",
+  "keywords": [
+    "async",
+    "await",
+    "promises",
+    "generators",
+    "yield",
+    "es6",
+    "es7",
+    "ast",
+    "rewriting",
+    "refactoring",
+    "codegen",
+    "syntax",
+    "transformation",
+    "parsing",
+    "pretty-printing"
+  ],
+  "version": "0.0.1",
+  "homepage": "http://github.com/benjamn/es7-async-await",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/benjamn/es7-async-await.git"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha --reporter spec"
+  },
+  "dependencies": {
+    "esprima": "git://github.com/benjamn/esprima.git#async-await",
+    "through": "~2.3.4",
+    "recast": "~0.7.1"
+  },
+  "devDependencies": {
+    "mocha": "~1.21.4"
+  },
+  "engines": {
+    "node": ">= 0.8"
+  }
+}
