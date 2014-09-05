@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+
+var assert = require("assert");
+
+module.exports = require("..");
+
+if (require.main === module) {
+  var args = process.argv.slice(2);
+  var stream;
+
+  if (process.stdin.isTTY) {
+    assert.notStrictEqual(args.length, 0);
+    stream = require("fs").createReadStream(args[0]);
+  } else {
+    assert.strictEqual(args.length, 0);
+    stream = process.stdin;
+  }
+
+  stream.pipe(module.exports()).pipe(process.stdout);
+}
