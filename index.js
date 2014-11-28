@@ -1,7 +1,7 @@
 var recast = require("recast");
 var types = recast.types;
 var through = require("through");
-var esprima = require("esprima");
+var esprima = require("esprima-fb");
 var visitor = require("./visitor");
 
 // Make sure that this esprima can parse async functions.

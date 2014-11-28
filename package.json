@@ -32,12 +32,12 @@
     "test": "node ./node_modules/mocha/bin/mocha --reporter spec"
   },
   "dependencies": {
-    "esprima": "git://github.com/benjamn/esprima.git#async-await",
-    "through": "~2.3.4",
-    "recast": "~0.7.1"
+    "esprima-fb": "~8001.1001.0-dev-harmony-fb",
+    "through": "~2.3.6",
+    "recast": "~0.9.6"
   },
   "devDependencies": {
-    "mocha": "~1.21.4"
+    "mocha": "~2.0.1"
   },
   "engines": {
     "node": ">= 0.8"
