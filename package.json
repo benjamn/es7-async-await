@@ -19,7 +19,7 @@
     "parsing",
     "pretty-printing"
   ],
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "http://github.com/benjamn/es7-async-await",
   "repository": {
     "type": "git",
